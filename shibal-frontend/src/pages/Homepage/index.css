@@ -1,11 +1,14 @@
 .shiba{
-    width: 50%;
+    position:fixed;
+    width: 500px;
+    left: 50%;
+    
     cursor: pointer;
     transition: 0.5s;
 }
 
 .shiba:hover{
-    width: 60%;
+    transform: scale(1.1);
 }
 
 

@@ -39,7 +39,7 @@
     animation: 18s ease-in-out infinite alternate move-1;
   }
 
-    .homepage-container{
+    .container{
     isolation: isolate;
     width: 300px;
 	height: 100px;
@@ -80,6 +80,23 @@
     height: 100vh;
   }
 
+  /* footer */
+
+  .footer{
+    position: fixed;
+    font-family: 'Carter', monospace;
+    width: 100%;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+  }
 
 
   /* for chrome */

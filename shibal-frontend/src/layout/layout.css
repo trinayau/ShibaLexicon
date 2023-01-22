@@ -1,0 +1,90 @@
+.backdrop {
+
+    background: center / cover no-repeat url('../images/bg.jpeg');
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* cursor: default; */
+    position: fixed;
+	filter: brightness(1.3);
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .shapes {
+    z-index: 2;
+    position: relative;
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.18);
+    text-shadow: 0 0 20px beige;
+    mix-blend-mode: multiply;
+    font: bolder 720pt/620pt monospace;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+
+  .backdrop > .shapes:nth-of-type(1){
+    animation: 20s ease-in-out infinite alternate move;
+  }
+  .backdrop > .shapes:nth-of-type(2):hover{
+    animation: 18s ease-in-out infinite alternate move-1;
+  }
+
+    .homepage-container{
+    isolation: isolate;
+    width: 300px;
+	height: 100px;
+  }
+
+  
+  @keyframes move {
+    from {
+      text-indent: -20px;
+    }
+    to {
+      text-indent: 400px;
+    }
+  }
+  @keyframes move-1 {
+    from {
+      text-indent: -600px;
+    }
+    to {
+      text-indent: 400px;
+    }
+  }
+  
+  body > *,
+.backdrop > * {
+  grid-area: 1/1;
+} 
+
+   body,
+.backdrop {
+  display: grid;
+}
+
+  body {
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+  }
+
+
+
+  /* for chrome */
+@supports (-webkit-app-region:none) {
+    .shapes {
+      text-shadow: 0 0 14px white;
+    }
+  }

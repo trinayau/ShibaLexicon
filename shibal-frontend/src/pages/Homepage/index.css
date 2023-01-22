@@ -1,0 +1,11 @@
+.shiba{
+    width: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shiba:hover{
+    width: 60%;
+}
+
+

@@ -1,14 +1,15 @@
-import "./App.css";
-import logo from "./shiba.svg";
+import {Routes, Route, Navigate} from 'react-router-dom';
+import { Homepage } from "./pages";
+import Layout from "./layout";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="app-logo" alt="logo" />
-
-        <h1>ShibaLexicon</h1>
-      </header>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Homepage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

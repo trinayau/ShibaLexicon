@@ -1,9 +1,9 @@
 
 .dialog-box{
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Carter', sans-serif;
     z-index: 99;
-    top: 50%;
+    top: 20%;
     right: 50%;
     text-shadow: 2px 2px 1px #E3AA90, -2px 2px 1px #E3AA90, 2px -2px 1px #E3AA90, -2px -2px 1px #E3AA90, 0px 2px 1px #E3AA90, 0px -2px 1px #E3AA90, 0px 4px 1px #E3AA90, 2px 4px 1px #E3AA90, -2px 4px 1px #E3AA90;
     color: white;

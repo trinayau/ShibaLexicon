@@ -4,29 +4,12 @@ import shibablush from '../../images/shibablush.png';
 import './index.css';
 import { DialogBox, Dictionary } from '../../components';
 import {useState, useEffect} from 'react';
+import {useGlobalContext} from '../../context/Context';
 
 const Homepage = () => {
-    const [status, setState] = useState(false);
-    const [image, setImage] = useState(shiba);
-    const [dictStatus, setDictStatus] = useState(false);
-
-    const handleClick = (req) => {
-        const request = req;
-        switch(request){
-            case "first":
-                setState(prevStatus => !prevStatus);
-                setImage(prevImage => prevImage === shiba ? shibacool : shiba);
-                setDictStatus(false);
-                break;
-            case "dictionary":
-                setState(prevStatus => !prevStatus);
-                setImage( shibablush);
-                setDictStatus(true);
-                break;
-        default:
-            break;
-    }
-    }
+    
+    
+    const {handleClick, status, image, dictStatus} = useGlobalContext();
 
     return ( <div className="container">
         <img src={image} alt="shiba" className='shiba' onClick={()=>handleClick('first')}/>

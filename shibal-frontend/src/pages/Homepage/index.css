@@ -1,8 +1,8 @@
 .shiba{
     position:fixed;
-    width: 500px;
-    left: 50%;
-    
+    width: 450px;
+    left: 60%;
+    z-index: 1000;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -12,3 +12,12 @@
 }
 
 
+/* for mobile media query: */
+
+@media screen and (max-width: 768px){
+    .shiba{
+        width: 200px;
+        left: 50%;
+        top: 75%;
+    }
+}

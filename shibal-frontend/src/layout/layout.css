@@ -95,7 +95,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 100;
   }
 
 
@@ -103,5 +102,16 @@
 @supports (-webkit-app-region:none) {
     .shapes {
       text-shadow: 0 0 14px white;
+    }
+  }
+
+  /* mobile media query */
+  @media screen and (max-width: 768px) {
+    .shapes {
+      font-size: 300pt;
+    }
+
+    .footer{
+      display: none;
     }
   }

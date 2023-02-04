@@ -1,6 +1,6 @@
 .shiba{
     position:fixed;
-    width: 450px;
+    width: 400px;
     left: 60%;
     z-index: 1000;
     cursor: pointer;
@@ -18,6 +18,6 @@
     .shiba{
         width: 200px;
         left: 50%;
-        top: 75%;
+        top: 70%;
     }
 }
